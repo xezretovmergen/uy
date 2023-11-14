@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Uylar-bor.uz</title>
+  </head>
+  <body>
+    <div class="body"></div>
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- .site-mobile-menu -->
+
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6">
+            <a href="index.html"
+              >Uylar-bor <ion-icon name="home-outline"></ion-icon
+            ></a>
+          </div>
+
+          <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="about.html">Biz haqimizda</a></li>
+              <li><a href="contact.html">Biz bilan bog'lanish </a></li>
+              <li class="has-children">
+                <a href="#">Viloyatingiz</a>
+                <ul id="getValue" class="dropdown">
+                  <li><p onclick="func('Andijon')">Andijon</p></li>
+                  <li><p onclick="func('Buxoro')">Buxoro</p></li>
+                  <li><p onclick="func('Farg`ona')">Farg`ona</p></li>
+                  <li><p onclick="func('Jizzax')">Jizzax</p></li>
+                  <li><p onclick="func('Xorazm')">Xorazm</p></li>
+                  <li><p onclick="func('Namangan')">Namangan</p></li>
+                  <li><p onclick="func('Navoiy')">Navoiy</p></li>
+                  <li><p onclick="func('Qashqadaryo')">Qashqadaryo</p></li>
+                  <li>
+                    <p onclick="func('Qoraqalpog`iston Respublikasi')">
+                      Qoraqalpog`iston Respublikasi
+                    </p>
+                  </li>
+                  <li><p onclick="func('Samarqand')">Samarqand</p></li>
+                  <li><p onclick="func('Sirdaryo')">Sirdaryo</p></li>
+                  <li><p onclick="func('Surxondaryo')">Surxondaryo</p></li>
+                  <li><p onclick="func('Toshkent')">Toshkent</p></li>
+                  <li>
+                    <p onclick="func('Toshkent shahri')">Toshkent shahri</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-lg-none">
+                <a href="post-job.html"
+                  ><span class="mr-2">+</span> Uy joylash</a
+                >
+              </li>
+              <li class="d-lg-none"><a href="login.html">Kirish</a></li>
+            </ul>
+          </nav>
+
+          <div
+            class="right-cta-menu text-right d-flex aligin-items-center col-6"
+          >
+            <div class="ml-auto">
+              <a
+                href="post-job.html"
+                class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"
+                ><span class="mr-2 icon-add"></span>Uy joylash</a
+              >
+              <span class="btn btn-primary border-width-2  d-lg-inline-block dropdown dropleft">
+                <span class="mr-2 icon-lock_outline" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > Kirish</span>
+                <div class="dropdown-menu">
+                  <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Foydalanuvchi nomingiz </label>
+                      <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Foydalanuvchi nomi">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Parolingiz</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Parol">
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                         Saytda eslab qolinsin
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" id="SignIn" class="btn btn-primary">Kirish</button>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" id="SignUp" href="#">Ro'yxatdan o'tish</a>
+
+                </div>
+                </span>
+            </div>
+            <a
+              href="#"
+              class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"
+              ><span class="icon-menu h3 m-0 p-0 mt-2"></span
+            ></a>
+          </div>
+        </div>
+        <div class="container mt-5 bg-dark  ">
+        <div class="row">
+          
+            <select onclick="selectProvinceAlert()" id="room" class="form-control form-control-lg bg-light text-success col">
+              <option>1 xonali</option>
+              <option>2 xonali</option>
+              <option>3 xonali</option>
+              <option>4 va undan ko'p xonali</option>
+            </select>
+       
+          <select class="form-control form-control-lg bg-light text-success col">
+            <option id="tuman1"></option>
+            <option id="tuman2"></option>
+            <option id="tuman3"></option>
+            <option id="tuman4"></option>
+            <option id="tuman5"></option>
+          </select>
+        </div>
+        <div class="row mt-2">
+          <div class="col-sm-8  bg-light text-success col rounded-3 rounded-top rounded-right rounded-left rounded-bottom">
+            <form>
+              <div class="form-group ">
+                <label class="value" for="formControlRange">50000000 dan 50000000 gacha </label>
+                <input min="50000000" max="1500000000" step="5000000" value="50000000" type="range" class="form-control-range" id="formControlRange">
+              </div>
+            </form>
+          </div>
+       <button type="button" onclick="test()" class="col-sm-4  bg-light text-success col  btn btn-secondary">Naqijalarni ko'rsatish</button>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
